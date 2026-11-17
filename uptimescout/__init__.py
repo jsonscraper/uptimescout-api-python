@@ -1,4 +1,4 @@
-"""UptimeScout cached service availability client. No collection is triggered."""
+"""UptimeScout service availability client."""
 import json, urllib.request, urllib.parse, urllib.error
 class NoRedirect(urllib.request.HTTPRedirectHandler):
     def redirect_request(self,*args,**kwargs):return None
@@ -15,7 +15,7 @@ class Client:
     def request(self,method,**params):
         if method not in self.METHODS: raise ValueError("Unknown method")
         params={k: ",".join(v) if isinstance(v,(list,tuple)) else v for k,v in params.items() if v is not None}
-        req=urllib.request.Request(self.base_url+"/v1/"+method+"?"+urllib.parse.urlencode(params),headers={"Authorization":"Bearer "+self.key,"Accept":"application/json","User-Agent":"uptimescout-python/0.1.1"})
+        req=urllib.request.Request(self.base_url+"/v1/"+method+"?"+urllib.parse.urlencode(params),headers={"Authorization":"Bearer "+self.key,"Accept":"application/json","User-Agent":"uptimescout-python/0.1.2"})
         try:
             with _open(req,timeout=self.timeout) as response: data=json.load(response)
         except urllib.error.HTTPError as error:
