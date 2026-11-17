@@ -1,0 +1,9 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "uptimescout-api"
+version = "0.1.1"
+description = "UptimeScout API client: cached regional availability and observation history"
+requires-python = ">=3.10"
+license = "MIT"
