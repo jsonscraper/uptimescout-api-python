@@ -144,7 +144,7 @@ Observations are updated every minute. A reported disruption signal is not a con
 
 ## Connect an AI assistant
 
-Use the same license with the [UptimeScout MCP server](https://github.com/jsonscraper/uptimescout-mcp-server) or the [shared jsonscraper connector](https://jsonscraper.com/services/uptimescout-api?utm_source=github&utm_medium=sdk&utm_campaign=uptimescout-api-python&utm_content=mcp#connect). The dedicated endpoint is `https://mcp.uptimescout.com/mcp`. [Connection examples](docs/mcp.md).
+Use the same license with the [UptimeScout MCP server](https://github.com/jsonscraper/uptimescout-mcp-server) or the [shared jsonscraper connector](https://jsonscraper.com/services/uptimescout-api?utm_source=github&utm_medium=sdk&utm_campaign=uptimescout-api-python&utm_content=mcp#connect). The dedicated endpoint is `https://mcp.uptimescout.com`. [Connection examples](docs/mcp.md).
 
 ## Support and license
 
